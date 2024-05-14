@@ -1,0 +1,179 @@
+body{
+    display: grid;
+    grid-template-columns: 5;
+    grid-template-rows: 6;
+    grid-template-areas:
+    'side header header header profile'
+    'side hor hor hor hor'
+    'side buttons buttons buttons buttons'
+    'side pr pr pr pr ';
+
+    background-color:rgba(216, 228, 231, 0.703);
+}
+.All_profiles .grid_items .profile_grid{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 5px;
+    display: block;
+}
+.All_profiles .grid_items .info span{
+    margin-right: 20px;
+}
+.All_profiles .grid_items .info{
+    display: block;
+    margin-top: -25px;
+    margin-left: 60px;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+.grid_items:first-child{
+    grid-row: 1/3;
+}
+.grid_items:nth-child(2){
+    grid-row: 1/2;
+}
+.grid_items:nth-child(3){
+    grid-row: 1/3;
+}
+.grid_items:nth-child(4){
+    margin-top: -110px;
+    grid-row: 2/3;
+}
+.grid_items:nth-child(5){
+    margin-top: -110px;
+    grid-row: 2/3;
+}
+.All_profiles .grid_items .photo{
+    /* width: 250px;
+    height: 400px; */
+    border-radius: 10px;
+    width: 80%;
+    height: 60%;
+}
+.All_profiles{
+    grid-area: pr;
+    grid-template-columns: repeat(4,260px);
+    grid-template-rows: repeat(6,auto);
+    display: grid;
+    column-gap: 20px ;
+    width: 900px;
+    height: 700px;
+    margin-top: 15px;
+}
+.side_bar .container:hover{
+    background-color: black;
+}
+.header .search input:focus{
+    outline: none;
+}
+.profile{
+    grid-area: profile;
+}
+.buttons button{
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    color: gray;
+    border: 1px solid gray;
+}
+.hor{
+    grid-area: hor;
+}
+.buttons{
+    grid-area: buttons;
+    margin-top: 15px;
+}
+.horizontal{
+    color: black;
+}
+.header .search{
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 200px;
+}
+.header .search input{
+    border: none;
+}
+.profile img{
+    margin-top: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.profile .name{
+    display: block;
+    font-size: 20px;
+    margin-left: 60px;
+    margin-top: -60px;
+}
+.profile .email{
+    display: block;
+    font-size: 20px;
+    margin-left: 60px;
+    margin-top: -10px;
+    color: gray;
+}
+.header{
+    margin-top: 20px;
+}
+
+.side_bar{
+    grid-area: side;
+    width: 300px;
+    background-color: white;
+    margin-top: -5px;
+    margin-left: -5px ;
+    height: 731px;
+    margin-right: 5px;
+}
+
+.header{
+    grid-area: header;
+}
+.side_bar .container,.side_bar .button_create{
+    text-align: left;
+    align-items: center;
+    border-radius: 15px;
+    padding: 8px;
+    width: 150px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.side_bar .container img{
+    width: 20px;
+    height: 20px;
+}
+.side_bar{
+    height: 800px;
+}
+
+.side_bar .container button,.side_bar .button_create button{
+border: none;
+background-color: transparent;
+color: #9F9FA2;
+font-size: 18px;
+}
+
+.side_bar .logo{
+    width: 80px;
+    height: 80px;
+}
+.side_bar .name_logo{
+    display: inline-block;
+    font-size: 40px;
+}
+
+.side_bar .button_create .checked{
+    color:white ;
+    width: 20px;
+    height: 20px;
+}
+
+.side_bar #history{
+    margin-bottom: 210px;
+}
